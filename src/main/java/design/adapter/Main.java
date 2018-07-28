@@ -2,7 +2,7 @@ package design.adapter;
 
 /**
  * @author ZLB
- * @Description:
+ * @Description:适配器模式
  * @date 2018/4/3
  */
 public class Main {
@@ -12,5 +12,6 @@ public class Main {
         IThreePlug threePlug = new TwoPlugAdapter(twoPlug);
         Notebook notebook = new Notebook(threePlug);
         notebook.charge();
+        System.out.println("提效新内容啦！");
     }
 }
